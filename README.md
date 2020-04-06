@@ -42,7 +42,7 @@ urlpatterns = [
 ]
 ```
 *****
-#Django Tutorial 2
+# Django Tutorial 2
 1. 데이터베이스 설치
 *mysite/settings.py 파일 = Django 설정을 내용으로 갖는 Python 모듈
 *기본 데이터베이스는 SQLite3으로 설정되어 있지만, 실제 프로젝트를 운용할 때는 PostgreSQL 등의 확장성 있는 데이터베이스를 사용하는 것이 유리하다.
@@ -124,7 +124,7 @@ from .models import Question
 admin.site.register(Question)
 ```
 *****
-#Django Tutorial 3
+# Django Tutorial 3
 1. View 추가
 *색인(최근 질문 표시) / 세부(질문 내용 및 투표 서식 표시) / 결과(특정 질문에 대한 결과 표시) / 투표기능 등 4개의 view를 생성한다.
 *polls/view.py에서 view 함수 생성
@@ -205,7 +205,7 @@ def detail(request, question_id):
 <li><a href="{% url 'detail' question.id %}">{{ question.question_text }}</a></li>
 ```
 *****
-#Django Tutorial 4
+# Django Tutorial 4
 1. vote() 함수 구현
 *입력 받은 데이터를 처리하고 해당 데이터로 추가적인 작업을 수행하도록 vote() 함수 부분을 구현한다. (polls 앱의 경우 투표수 집계 등)
 *polls/urls.py에서 path 추가
